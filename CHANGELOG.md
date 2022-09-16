@@ -1,5 +1,15 @@
 # quote-machine
 
+## 4.1.0
+
+### Minor Changes
+
+- [`bb39d4a`](https://github.com/apvale/quote-machine/commit/bb39d4a4385de02a8ed363f924be9a197dae3697) Thanks [@apvale](https://github.com/apvale)! - Add one more to the list
+
+### Patch Changes
+
+- [`8388269`](https://github.com/apvale/quote-machine/commit/83882696dee701f1583d4c04dd99975db8c286ea) Thanks [@apvale](https://github.com/apvale)! - Remove item
+
 ## 4.0.0
 
 ### Major Changes
