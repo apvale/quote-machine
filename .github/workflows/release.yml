@@ -25,8 +25,8 @@ jobs:
 
       - name: Setup CI Git User
         run: |
-          git config --global user.email "apvalefin@gmail.com"
-          git config --global user.name "Ana Vale"
+          git config --global user.email "anapaula.vale6@gmail.com"
+          git config --global user.name "aninhabot"
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
