@@ -1,0 +1,8 @@
+{
+  "name": "quote-machine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:apvale/quote-machine.git",
+  "author": "Ana Paula Vale <apvalefin@gmail.com>",
+  "license": "MIT"
+}
