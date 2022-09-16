@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+changesets@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/changesets/-/changesets-1.0.2.tgz#d4eb67f826c6b5e19b56ced4f5add72e1e0cadb8"
+  integrity sha512-lnXvvqJEcK0z/6RtwKNLbejazl+Hxd1bocMcNgfLHWb4rGxuqkO/LdeGNzwIx3jHj+fNWZ6AGgK5AqNBwva4Xg==

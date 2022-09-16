@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:apvale/quote-machine.git",
   "author": "Ana Paula Vale <apvalefin@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "changesets": "^1.0.2"
+  }
 }
