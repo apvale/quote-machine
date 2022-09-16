@@ -6,6 +6,7 @@
   "author": "Ana Paula Vale <apvalefin@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@changesets/cli": "^2.24.4",
     "changesets": "^1.0.2"
   }
 }
