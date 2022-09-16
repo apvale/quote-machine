@@ -4,6 +4,7 @@ const quotes = [
   'Don’t Let Yesterday Take Up Too Much Of Today.',
   'One more quote',
   'Second more quote',
+  'Three more quote',
 ]
 
 function newQuote() {
