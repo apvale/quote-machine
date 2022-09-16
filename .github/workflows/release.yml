@@ -23,7 +23,7 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      - name: Setup CI Git User
+      - name: Setup Bot
         run: |
           git config --global user.email "anapaula.vale6@gmail.com"
           git config --global user.name "aninhabot"
@@ -34,6 +34,9 @@ jobs:
         with:
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: yarn release
+          commit: 'chore: release'
+          title: 'A New Release'
+          setupGitUser: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
