@@ -5,6 +5,7 @@ const quotes = [
   'One more quote',
   'Second more quote',
   'Three more quote',
+  'Four more quote',
 ]
 
 function newQuote() {
