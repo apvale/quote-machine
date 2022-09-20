@@ -31,9 +31,8 @@ jobs:
       - name: "Creates Pull Request or Publish to npm"
         uses: changesets/action@v1
         with:
-          publish: yarn changeset publish
-          commit: "chore(release): version packages"
+          publish: yarn release
           setupGitUser: false
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_BOT }}
-          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
