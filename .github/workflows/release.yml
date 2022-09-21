@@ -36,7 +36,7 @@ jobs:
           setupGitUser: false
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_BOT }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: wrongtoken
 
       - name: Notify success to Slack
         if: steps.changesets.outputs.published == 'true'
