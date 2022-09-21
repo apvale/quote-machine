@@ -1,5 +1,11 @@
 # quote-machine
 
+## 6.0.0
+
+### Major Changes
+
+- [`981ae86`](https://github.com/apvale/quote-machine/commit/981ae86b8af20626403255268f95239157fc0522) Thanks [@apvale](https://github.com/apvale)! - Remove quote
+
 ## 5.1.0
 
 ### Minor Changes
