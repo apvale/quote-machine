@@ -50,7 +50,7 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Notify failure to Slack
-        if: env.noChangesets && env.notPublished
+        if: failure() && steps.changesets.outcome == 'failure'
         uses: slackapi/slack-github-action@v1.22.0
         with:
           payload: |
@@ -58,6 +58,4 @@ jobs:
               "message": "❌ Something went wrong publishing Pluto to NPM"
             }
         env:
-          noChangesets: ${{ steps.changesets.outputs.hasChangesets == 'false' }}
-          notPublished: ${{ steps.changesets.outputs.published == 'false' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
