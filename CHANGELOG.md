@@ -1,5 +1,11 @@
 # quote-machine
 
+## 6.0.2
+
+### Patch Changes
+
+- [`5d02d37`](https://github.com/apvale/quote-machine/commit/5d02d370decdb60b7652760fd575b25ffa7833fa) Thanks [@padulafacundo](https://github.com/padulafacundo)! - Fire slack failure notification
+
 ## 6.0.1
 
 ### Patch Changes
