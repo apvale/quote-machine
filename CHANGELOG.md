@@ -1,5 +1,11 @@
 # quote-machine
 
+## 6.0.1
+
+### Patch Changes
+
+- [`915fd3a`](https://github.com/apvale/quote-machine/commit/915fd3a9603376ca7d874c13b40c7ffc6ed28f7e) Thanks [@padulafacundo](https://github.com/padulafacundo)! - Just trying slack notification
+
 ## 6.0.0
 
 ### Major Changes
