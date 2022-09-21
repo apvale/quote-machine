@@ -44,7 +44,7 @@ jobs:
         with:
           payload: |
             {
-              "message": ${{ message }},
+              "message": ${{ env.message }},
             }
         env:
           message: "✅ Successfully published Pluto to NPM. Packages updated: ${{ steps.changesets.outputs.publishedPackages }}"
@@ -56,7 +56,7 @@ jobs:
         with:
           payload: |
             {
-              "message": ${{ message }},
+              "message": ${{ env.message }},
             }
         env:
           message: ❌ Something went wrong publishing Pluto to NPM
