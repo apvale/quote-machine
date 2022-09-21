@@ -39,7 +39,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Notify publish success to Slack
-        if: steps.changesets.outputs.published = "true"
+        if: steps.changesets.outputs.published == "true"
         uses: slackapi/slack-github-action@v1.22.0
         with:
           payload: |
