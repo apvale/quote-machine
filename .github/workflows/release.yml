@@ -44,10 +44,11 @@ jobs:
         with:
           payload: |
             {
-              "message": "${{ env.message }}"
+              "message": "${{ env.message }}",
+              "publishedPackages": ${{ steps.changesets.outputs.publishedPackages }}
             }
         env:
-          message: "✅ Successfully published Pluto to NPM. Packages updated: ${{ steps.changesets.outputs.publishedPackages }}"
+          message: "✅ Successfully published Pluto to NPM"
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Notify publish failure to Slack
@@ -56,7 +57,8 @@ jobs:
         with:
           payload: |
             {
-              "message": "${{ env.message }}"
+              "message": "${{ env.message }}",
+              "publishedPackages": ${{ steps.changesets.outputs.publishedPackages }}
             }
         env:
           message: ❌ Something went wrong publishing Pluto to NPM
