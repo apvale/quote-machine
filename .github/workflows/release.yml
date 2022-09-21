@@ -38,28 +38,26 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN_BOT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Notify publish success to Slack
+      - name: Notify success to Slack
         if: steps.changesets.outputs.published == 'true'
         uses: slackapi/slack-github-action@v1.22.0
         with:
           payload: |
             {
-              "message": "${{ env.message }}",
-              "publishedPackages": ${{ steps.changesets.outputs.publishedPackages }}
+              "message": "✅ Successfully published Pluto to NPM"
             }
         env:
-          message: "✅ Successfully published Pluto to NPM"
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
-      - name: Notify publish failure to Slack
-        if: ${{ !steps.changesets.outputs.published }}
+      - name: Notify failure to Slack
+        if: env.noChangesets && env.notPublished
         uses: slackapi/slack-github-action@v1.22.0
         with:
           payload: |
             {
-              "message": "${{ env.message }}",
-              "publishedPackages": ${{ steps.changesets.outputs.publishedPackages }}
+              "message": "❌ Something went wrong publishing Pluto to NPM"
             }
         env:
-          message: ❌ Something went wrong publishing Pluto to NPM
+          noChangesets: ${{ steps.changesets.outputs.hasChangesets == 'false' }}
+          notPublished: ${{ steps.changesets.outputs.published == 'false' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
