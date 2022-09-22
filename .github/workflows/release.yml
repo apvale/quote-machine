@@ -29,14 +29,14 @@ jobs:
           git config --global user.name "aninhabot"
 
       - name: "Creates Pull Request or Publish to npm"
-        id: changesets 
+        id: changesets
         uses: changesets/action@v1
         with:
           publish: yarn release
           setupGitUser: false
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_BOT }}
-          NPM_TOKEN: wrongtoken
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Notify success to Slack
         if: steps.changesets.outputs.published == 'true'
@@ -44,7 +44,8 @@ jobs:
         with:
           payload: |
             {
-              "message": "✅ Successfully published Pluto to NPM"
+              "message": "✅ Successfully published Pluto to NPM",
+              "publishedPackages": '${{ steps.changesets.outputs.publishedPackages }}'
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -55,7 +56,8 @@ jobs:
         with:
           payload: |
             {
-              "message": "❌ Something went wrong publishing Pluto to NPM"
+              "message": "❌ Something went wrong publishing Pluto to NPM",
+              "publishedPackages": []
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
