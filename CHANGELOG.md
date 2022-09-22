@@ -1,5 +1,11 @@
 # quote-machine
 
+## 6.0.3
+
+### Patch Changes
+
+- [`e51ef6d`](https://github.com/apvale/quote-machine/commit/e51ef6d2e0d501db5c343baf5606821542ace03f) Thanks [@padulafacundo](https://github.com/padulafacundo)! - Trying to send publishedpackages
+
 ## 6.0.2
 
 ### Patch Changes
