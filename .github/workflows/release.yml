@@ -45,7 +45,7 @@ jobs:
           payload: |
             {
               "message": "✅ Successfully published Pluto to NPM",
-              "publishedPackages": '${{ toJson(steps.changesets.outputs.publishedPackages) }}'
+              "publishedPackages": ${{ toJson(steps.changesets.outputs.publishedPackages) }}
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
