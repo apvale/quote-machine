@@ -1,5 +1,11 @@
 # quote-machine
 
+## 6.0.4
+
+### Patch Changes
+
+- [`52a3573`](https://github.com/apvale/quote-machine/commit/52a3573242b4a915ec9088396640ed71e45be1d6) Thanks [@padulafacundo](https://github.com/padulafacundo)! - Try to make notifications work
+
 ## 6.0.3
 
 ### Patch Changes
