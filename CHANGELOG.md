@@ -1,5 +1,13 @@
 # quote-machine
 
+## 6.0.5
+
+### Patch Changes
+
+- [`322fdff`](https://github.com/apvale/quote-machine/commit/322fdffc11e7e6beb257ecbc4621d34d6add015d) Thanks [@padulafacundo](https://github.com/padulafacundo)! - Improve code
+
+- [`322fdff`](https://github.com/apvale/quote-machine/commit/322fdffc11e7e6beb257ecbc4621d34d6add015d) Thanks [@padulafacundo](https://github.com/padulafacundo)! - Patch
+
 ## 6.0.4
 
 ### Patch Changes
