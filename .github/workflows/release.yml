@@ -11,6 +11,7 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    if: github.actor != 'dependabot' || contains(github.event.pull_request.draft, false)
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
