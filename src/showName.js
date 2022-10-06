@@ -1,5 +1,5 @@
 function showName() {
-  return "ana"
+  return "ana";
 }
 
-module.exports = showName
+module.exports = showName;

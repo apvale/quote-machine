@@ -5,18 +5,18 @@ const quotes = [
   "One more quote",
   "Second more quote",
   "Three more quote",
-]
+];
 
 function newQuote() {
-  let randomNumber = Math.floor(Math.random() * quotes.length)
+  let randomNumber = Math.floor(Math.random() * quotes.length);
 
-  document.getElementById("text").innerHTML = quotes[randomNumber]
+  document.getElementById("text").innerHTML = quotes[randomNumber];
 }
 
 function handleTweet() {
-  const quote = document.querySelector("#text").innerHTML
-  const tweetLink = `https://twitter.com/intent/tweet?hashtags=quotes&text=${quote}`
+  const quote = document.querySelector("#text").innerHTML;
+  const tweetLink = `https://twitter.com/intent/tweet?hashtags=quotes&text=${quote}`;
 
-  var link = document.getElementById("tweet-quote")
-  link.setAttribute("href", tweetLink)
+  var link = document.getElementById("tweet-quote");
+  link.setAttribute("href", tweetLink);
 }
