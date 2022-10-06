@@ -6,11 +6,16 @@
   "author": "Ana Paula Vale <apvalefin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "test": "yarn jest"
   },
-  "dependencies": {"@changesets/changelog-github": "^0.4.7",
+  "dependencies": {
+    "@changesets/changelog-github": "^0.4.7",
     "@changesets/cli": "^2.25.0",
     "ana-vale-package": "^1.0.0",
     "changesets": "^1.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.1.2"
   }
 }
